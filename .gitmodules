@@ -1,0 +1,6 @@
+[submodule "sui-move-annotation"]
+	path = sui-move-annotation
+	url = git@github.com:GPTutor/sui-move-annotation.git
+[submodule "gptutor-extension"]
+	path = gptutor-extension
+	url = git@github.com:GPTutor/gptutor-extension.git
