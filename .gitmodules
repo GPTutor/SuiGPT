@@ -4,3 +4,6 @@
 [submodule "gptutor-extension"]
 	path = gptutor-extension
 	url = git@github.com:GPTutor/gptutor-extension.git
+[submodule "SuiGPT-backend"]
+	path = SuiGPT-backend
+	url = git@github.com:GPTutor/SuiGPT-backend.git
