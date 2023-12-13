@@ -63,7 +63,7 @@ We integrated SuiGPT with GPTutor. GPTutor is a Visual Studio Code extension tha
 
 Furthermore, the API for generating prompts for SuiGPT is publicly available, so anyone can integrate SuiGPT into their AI coding services.
 
-## Future Works:
+## Future Milestones:
 
 - 2023 (Q4): Include more Move code as data
 - 2023 (Q4): Train and Evaluate LLMs, such as GPT and CodeLLaMA, with the Move database we created.
