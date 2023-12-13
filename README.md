@@ -8,7 +8,7 @@
 Through tailored Prompt Engineering, SuiGPT empowers GPT-4 to be proficient in the Move language, enabling it to generate corresponding Move code based on user instructions. It can be used through the GPTutor interface, and its API to get Prompt by user instruction is available on the Web. The website version is coming soon.
 
 
-[Slides link](https://drive.google.com/file/d/1IPKivJn1FpQpimrW9LJq9tF-riP7bBmz/view?usp=sharing)
+[Slides link (Pitch Deck)](https://drive.google.com/file/d/1IPKivJn1FpQpimrW9LJq9tF-riP7bBmz/view?usp=sharing)
 
 [Click me to Download GPTutor and try SuiGPT in Visual Studio Code IDE](https://marketplace.visualstudio.com/items?itemName=gptutor.gptutor&ssr=false#overview)
 
