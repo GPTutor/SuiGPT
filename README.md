@@ -68,5 +68,7 @@ Furthermore, the API for generating prompts for SuiGPT is publicly available, so
 - 2023 (Q4): Include more Move code as data
 - 2023 (Q4): Train and Evaluate LLMs, such as GPT and CodeLLaMA, with the Move database we created.
 - 2024 (Q1): Integrated SuiGPT into a Website so users can access SuiGPT from a browser
+- 2024 (Q2): Write a research paper about SuiGPT
 - 2024 (Q2*): Integrated SuiGPT into Sui-Move Web IDE to generate move code (* If Sui plans to lunch a Web IDE)
+  
 
