@@ -12,6 +12,8 @@ Through tailored Prompt Engineering, SuiGPT empowers GPT-4 to be proficient in t
 
 [Click me to Download GPTutor and try SuiGPT in Visual Studio Code IDE](https://marketplace.visualstudio.com/items?itemName=gptutor.gptutor&ssr=false#overview)
 
+[What Sui Technologies incorporated?](https://github.com/GPTutor/SuiGPT/blob/main/Sui-Technology-integrated.md)
+
 
 ## Introduction
 
@@ -47,7 +49,7 @@ Moreover, SuiGPT's Sui-Move annotation also supports the [smart contract from th
 <img width="1264" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/0b144556-b17f-4a54-a17f-6f3e5e49d381">
 
 ### 2. Create Dataset
-We collected 68 move files from Sui's official example code. After processing them through step one, we saved them in the ElasticSearch database, and the processed data [can be downloaded here](https://docs.google.com/spreadsheets/d/1DrjLQnYGKMtJHt0B0jfU3I7MuQPadUYxHnbVZKSNH9w/edit#gid=1582387538).
+We collected 68 move files from [Sui's official example code](https://github.com/MystenLabs/sui/tree/main/sui_programmability/examples). After processing them through step one, we saved them in the ElasticSearch database, and the processed data [can be downloaded here](https://docs.google.com/spreadsheets/d/1DrjLQnYGKMtJHt0B0jfU3I7MuQPadUYxHnbVZKSNH9w/edit#gid=1582387538).
 
 The source code of data processing and database creation is available at [GPTutor/SuiGPT-backend](https://github.com/GPTutor/SuiGPT-backend).
 
