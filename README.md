@@ -19,11 +19,9 @@ While GPT-4 is incredibly powerful, it lacks knowledge of Sui Move in its traini
 
 ## How it work?
 
-SuiGPT collect Move codes from the official Sui example codes, annotated them, and stored them in a database. When users want to create Move smart contract with SuiGPT. SuiGPT will provides relevant code snippets in prompts for GPT to reference. By doing so, SuiGPT can integrate various existing and audited Move contract functionalities, creating personalized new contracts for users.
+SuiGPT collect Move codes from the [official Sui example codes](https://github.com/MystenLabs/sui/tree/main/sui_programmability/examples), annotated them, and stored them in a database. When users want to create Move smart contract with SuiGPT. SuiGPT will provides relevant code snippets in prompts for GPT to reference. By doing so, SuiGPT can integrate various existing and executable Move contract functionalities, creating personalized new contracts for users.
 
 <img width="1455" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/789a85ed-d333-4b95-a12c-dcbacf614537">
-
-
 
 
 ## Finished Milestones
@@ -41,6 +39,8 @@ All the above are open-source and available by Web API.
 We use Sui-Move Analyzer to add type annotations to the Move code. Then, we utilize GPT-4 to annotate and summarize the code. 
 
 The annotation API is available at https://move-annotate-backend.gptutor.tools/api/docs. Moreover, the source code of database creation is available at [GPTutor/sui-move-annotation](https://github.com/GPTutor/sui-move-annotation).
+
+Moreover, SuiGPT's Sui-Move annotation also supports the [smart contract from the Bucket Protocol](https://github.com/Bucket-Protocol/v1-periphery), allowing users to generate smart contract applications that call the Bucket Protocol endpoints using SuiGPT.
 
 <img width="1264" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/0b144556-b17f-4a54-a17f-6f3e5e49d381">
 
