@@ -49,15 +49,15 @@ Moreover, SuiGPT's Sui-Move annotation also supports the [smart contract from th
 ### 2. Create Dataset
 We collected 68 move files from Sui's official example code. After processing them through step one, we saved them in the ElasticSearch database, and the processed data [can be downloaded here](https://docs.google.com/spreadsheets/d/1DrjLQnYGKMtJHt0B0jfU3I7MuQPadUYxHnbVZKSNH9w/edit#gid=1582387538).
 
-The source code of data processing and database creation is available at [GPTutor/sui-move-annotation](https://github.com/GPTutor/sui-move-annotation).
+The source code of data processing and database creation is available at [GPTutor/SuiGPT-backend](https://github.com/GPTutor/SuiGPT-backend).
 
 ### 3. Create Prompt
-By the users' input about what Move contract they wants to write, query similar Move codes by ElasticSearch's "more-like this" AI query. Then, pick the top 3 matched codes and assemble them to create a prompt for GPT-4 to reference. 
+By the users' input about what kinds of Move contract they want to write, query similar Move codes by [ElasticSearch's "more like this"](https://www.google.com/search?q=ElasticSearch+more+like+this+query&oq=ElasticSearch+more+like+this+query&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEIMjI1MmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8) query. Then, pick the top 3 matched codes and assemble them to create a prompt for GPT-4 to reference. 
 
 The prompt creation API is available at [https://backend.suigpt.gptutor.tools/api/docs](https://backend.suigpt.gptutor.tools/api/docs), and it's source code is at [GPTutor/SuiGPT-backend](https://github.com/GPTutor/SuiGPT-backend).
 
 ### 4. Integrated SuiGPT into GPTutor
-We integrated SuiGPT with GPTutor. GPTutor is a Visual Studio Code extension that enables users to use OpenAI's GPT models for code explanations, comments, and review. One of GPTutor's standout features is its open-source nature, which grants users the flexibility to customize their prompts. By dynamically querying prompts created by SuiGPT through the API into GPTutor, GPTutor is now able to compose Sui-Move according to users' instructions.
+We integrated SuiGPT with GPTutor. GPTutor is a Visual Studio Code extension that enables users to use OpenAI's GPT models for code explanations, comments, and reviews. One of GPTutor's standout features is its open-source nature, which grants users the flexibility to customize their prompts. By dynamically querying prompts created by SuiGPT through the API into GPTutor, GPTutor is now able to compose Sui-Move according to users' instructions.
 
 Furthermore, the API for generating prompts for SuiGPT is publicly available, so anyone can integrate SuiGPT into their AI coding services.
 
@@ -65,6 +65,6 @@ Furthermore, the API for generating prompts for SuiGPT is publicly available, so
 
 - 2023 (Q4): Include more Move code as data
 - 2023 (Q4): Train and Evaluate LLMs, such as GPT and CodeLLaMA, with the Move database we created.
-- 2024 (Q1): Integrated SuiGPT into a Website so users can access it at browser
-- 2024 (Q2*): Integrated SuiGPT into Sui-Move Web IDE to generate move code (*if Sui plan to lunch a Web IDE)
+- 2024 (Q1): Integrated SuiGPT into a Website so users can access SuiGPT from a browser
+- 2024 (Q2*): Integrated SuiGPT into Sui-Move Web IDE to generate move code (* If Sui plans to lunch a Web IDE)
 
