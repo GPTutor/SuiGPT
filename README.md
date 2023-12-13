@@ -5,11 +5,13 @@
 -->
 <img width="1293" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/897f3139-9dfb-4b73-9012-95849d466c77">
 
+Through tailored Prompt Engineering, SuiGPT empowers GPT-4 to be proficient in the Move language, enabling it to generate corresponding Move code based on user instructions. It can be used through the GPTutor interface, and its API to get Prompt by user instruction is available on the Web. The website version is coming soon.
+
+
 [Slides link](https://drive.google.com/file/d/1IPKivJn1FpQpimrW9LJq9tF-riP7bBmz/view?usp=sharing)
 
-[Click me to Download GPTutor and try SuiGPT in VS Code](https://marketplace.visualstudio.com/items?itemName=gptutor.gptutor&ssr=false#overview)
+[Click me to Download GPTutor and try SuiGPT in Visual Studio Code IDE](https://marketplace.visualstudio.com/items?itemName=gptutor.gptutor&ssr=false#overview)
 
-Through tailored Prompt Engineering, SuiGPT enables GPT-4 to be proficient in the Move language, enabling it to generate corresponding Move code based on user instructions. It can be used through the GPTutor interface, and its API to get Prompt by user instruction is available on the Web. The website version is coming soon.
 
 ## Introduction
 
