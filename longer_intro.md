@@ -17,24 +17,24 @@ Through tailored Prompt Engineering, SuiGPT empowers Large Language Models (LLMs
 
 ## Introduction
 
-While Large Language Models (LLMs) is incredibly powerful, it lacks knowledge of Sui Move in its training data, resulting in its unfamiliarity with the syntax and writing style of Sui Move.
+While Large Language Models (LLMs), such as GPT-4, are incredibly powerful, they lack knowledge of Sui Move in their training data, resulting in their unfamiliarity with the syntax and writing style of Sui Move.
 
 <img width="796" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/69fdc8da-fe59-4467-8acb-fd1254dc22d3">
 
-Just like a black and white cat among penguins. If you ask ChatGPT to generate Sui Move, it will indeed generate code that seems make some sense. However, this code is not compile-ready and does not adhere to the Move language standard. This effect we call it Hallucination in Natural Language Generation Research.
+Just like a black and white cat among penguins. If you ask ChatGPT to generate Sui Move, it will indeed generate code that seems to make some sense. However, this code is not compile-ready and does not adhere to the Move language standard. We call this effect hallucination in Natural Language Generation research.
 
-<img width="928" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/c1d58925-2313-41d2-9bd2-ea2e0e08aed6">
+<img width="50%" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/c1d58925-2313-41d2-9bd2-ea2e0e08aed6">
 
 
-Nevertheless, We believe that by providing Sui-Move examples through prompts, LLMs can generate Sui-Move code accurately without Hallucination. This is because LLMs could reference existing Sui-Move code to generate compilable Sui-Move. 
+Nevertheless, We believe that by providing Sui-Move examples through prompts, LLMs can generate Sui-Move code accurately without Hallucination. This is because LLMs could reference existing Sui-Move code to generate Sui-Move with the correct syntax. 
 
-<img width="958" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/91aee760-95f2-4e73-84c8-64e98869d5c7">
+<img width="50%" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/91aee760-95f2-4e73-84c8-64e98869d5c7">
 
 <img width="50%" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/6b66963d-c6b6-4510-865e-dce4e324d1a5">
 
-## How it work?
+## How does it work?
 
-SuiGPT collect Move codes from the [official Sui example codes](https://github.com/MystenLabs/sui/tree/main/sui_programmability/examples), annotated them, and stored them in a database. When users want to create Move smart contract with SuiGPT. SuiGPT will provides relevant code snippets in prompts for GPT to reference. By doing so, SuiGPT can integrate various existing and executable Move contract functionalities, creating personalized new contracts for users.
+SuiGPT collected Move codes from the [official Sui example codes](https://github.com/MystenLabs/sui/tree/main/sui_programmability/examples), annotated them, and stored them in a database. When users want to create a Move smart contract with SuiGPT, SuiGPT will provide relevant code snippets in prompts for GPT to reference. By doing so, SuiGPT can integrate various existing and executable Move contract functionalities, creating personalized new contracts for users.
 
 <img width="1455" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/789a85ed-d333-4b95-a12c-dcbacf614537">
 
@@ -67,9 +67,9 @@ The source code of data processing and database creation is available at [GPTuto
 ### 3. Create Prompt
 By the users' input about what kinds of Move contracts they want to write, SuiGPT prompt creation backend will query similar Move codes by [ElasticSearch's "more like this"](https://www.google.com/search?q=ElasticSearch+more+like+this+query&oq=ElasticSearch+more+like+this+query&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEIMjI1MmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8) query. Then, pick the top 3 matched codes and assemble them in a prompt for LLMs to reference. 
 
-For example, if a user says they want to create a fungible coin with airdrop feature, the backend will query Elasticsearch and find the following Move smart contract with top similarity scores: `Managed Fungible Tokens`, `Cross-Chain Airdrops of NFTs`. Then, SuiGPT API will create a prompt including these codes so LLMs can synthesize them to create a fusion of new Move contracts to fit the user's needs.
+For example, if a user says they want to create a fungible coin with an airdrop feature, the backend will query Elasticsearch and find the following Move smart contract with top similarity scores: `Managed Fungible Tokens`, `Cross-Chain Airdrops of NFTs`. Then, SuiGPT API will create a prompt including these codes so LLMs can synthesize them to create a fusion of new Move contracts to fit the user's needs.
 
-The prompt creation API is available at [https://backend.suigpt.gptutor.tools/api/docs](https://backend.suigpt.gptutor.tools/api/docs), and it's source code is at [GPTutor/SuiGPT-backend](https://github.com/GPTutor/SuiGPT-backend).
+The prompt creation API is available at [https://backend.suigpt.gptutor.tools/api/docs](https://backend.suigpt.gptutor.tools/api/docs), and its source code is at [GPTutor/SuiGPT-backend](https://github.com/GPTutor/SuiGPT-backend).
 
 <img width="1455" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/789a85ed-d333-4b95-a12c-dcbacf614537">
 
@@ -80,6 +80,8 @@ We integrated SuiGPT with GPTutor. GPTutor is a Visual Studio Code extension tha
 Furthermore, the API for generating prompts for SuiGPT is publicly available, so anyone can integrate SuiGPT into their AI coding services.
 
 ## Future Milestones:
+
+In the future, we will be carrying out the following tasks.
 
 - 2023 (Q4): Include more Move code as data
 - 2023 (Q4): Train and Evaluate LLMs, such as GPT and CodeLLaMA, with the Move database we created.
