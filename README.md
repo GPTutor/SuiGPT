@@ -42,7 +42,7 @@ All the above are open-source and available by Web API.
 ### 1. Annotated Move Code by Sui-Move Analyzer and add Comment and Summary by GPT-4
 We use Sui-Move Analyzer to add type annotations to the Move code. Then, we utilize GPT-4 to annotate and summarize the code. 
 
-The annotation API is available at https://move-annotate-backend.gptutor.tools/api/docs. Moreover, the source code of database creation is available at [GPTutor/sui-move-annotation](https://github.com/GPTutor/sui-move-annotation).
+The annotation API is available at https://move-annotate-backend.gptutor.tools/api/docs. Moreover, the source code of the annotation API is available at [GPTutor/sui-move-annotation](https://github.com/GPTutor/sui-move-annotation).
 
 Moreover, SuiGPT's Sui-Move annotation also supports the [smart contract from the Bucket Protocol](https://github.com/Bucket-Protocol/v1-periphery), allowing users to generate smart contract applications that call the Bucket Protocol endpoints using SuiGPT.
 
