@@ -54,7 +54,11 @@ We collected 68 move files from [Sui's official example code](https://github.com
 The source code of data processing and database creation is available at [GPTutor/SuiGPT-backend](https://github.com/GPTutor/SuiGPT-backend).
 
 ### 3. Create Prompt
-By the users' input about what kinds of Move contract they want to write, query similar Move codes by [ElasticSearch's "more like this"](https://www.google.com/search?q=ElasticSearch+more+like+this+query&oq=ElasticSearch+more+like+this+query&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEIMjI1MmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8) query. Then, pick the top 3 matched codes and assemble them to create a prompt for GPT-4 to reference. 
+By the users' input about what kinds of Move contracts they want to write, SuiGPT prompt creation backend will query similar Move codes by [ElasticSearch's "more like this"](https://www.google.com/search?q=ElasticSearch+more+like+this+query&oq=ElasticSearch+more+like+this+query&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEIMjI1MmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8) query. Then, pick the top 3 matched codes and assemble them in a prompt for GPT-4 to reference. 
+
+For example, if a user says they want to create a fungible coin with airdrop feature, the backend will query Elasticsearch and find"`Managed Fungible Tokens`", "`Cross-Chain Airdrops of NFTs`" Move smart contract is the most suitable one. Then, the prompt will include these codes so GPT-4 can synthesize them to fit the user's needs.
+
+<img width="1455" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/789a85ed-d333-4b95-a12c-dcbacf614537">
 
 The prompt creation API is available at [https://backend.suigpt.gptutor.tools/api/docs](https://backend.suigpt.gptutor.tools/api/docs), and it's source code is at [GPTutor/SuiGPT-backend](https://github.com/GPTutor/SuiGPT-backend).
 
