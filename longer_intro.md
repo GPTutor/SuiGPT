@@ -19,7 +19,7 @@ Through tailored Prompt Engineering, SuiGPT empowers Large Language Models (LLMs
 
 While Large Language Models (LLMs), such as GPT-4, are incredibly powerful, they lack knowledge of Sui Move in their training data, resulting in their unfamiliarity with the syntax and writing style of Sui Move.
 
-<img width="796" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/69fdc8da-fe59-4467-8acb-fd1254dc22d3">
+<img width="50%" alt="image" src="https://github.com/GPTutor/SuiGPT/assets/43432631/69fdc8da-fe59-4467-8acb-fd1254dc22d3">
 
 Just like a black and white cat among penguins. If you ask ChatGPT to generate Sui Move, it will indeed generate code that seems to make some sense. However, this code is not compile-ready and does not adhere to the Move language standard. We call this effect hallucination in Natural Language Generation research.
 
